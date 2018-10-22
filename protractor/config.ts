@@ -8,6 +8,8 @@ export let config: Config = {
   noGlobals: true,
   getPageTimeout: 30000,
   capabilities: {
+    shardTestFiles: true,
+    maxInstances: 2,
     browserName: 'chrome',
     chromeOptions: {
       args: ['disable-infobars=true', '--window-size=800,600'],
